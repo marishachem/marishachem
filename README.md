@@ -1,11 +1,7 @@
-  <div align="center">
+ <div align="center">
 
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Hi+Im+Marina&fontSize=42&fontColor=fff&a
   nimation=twinkling&fontAlignY=38&desc=Chemist+%7C+ML+Engineer+%7C+Frontend+Dev+%7C+QA&descAlignY=60&descColor=ccc" />
-
-  [![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=3000&pause=1000&color=22D3EE&center=true&vCenter=true&width=480&lines=Chemist+%2
-  B+ML+Engineer+%2B+Frontend+Dev;Building+ML+models+on+medical+data;React+dev+-+one+component+at+a+time;Testing+so+bugs+cannot+hide;Always+learning%2C+always+building)](htt
-  ps://git.io/typing-svg)
 
   </div>
 
