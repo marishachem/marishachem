@@ -1,13 +1,11 @@
   <div align="center">
 
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&
-  text=Hi%2C%20I'm%20Marina%20%F0%9F%91%8B&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=38&desc=Chemist%20%7C%20ML%
-  20Engineer%20%7C%20Frontend%20Dev%20%7C%20QA&descAlignY=60&descColor=ccc" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Hi+Im+Marina&fontSize=42&fontColor=fff&a
+  nimation=twinkling&fontAlignY=38&desc=Chemist+%7C+ML+Engineer+%7C+Frontend+Dev+%7C+QA&descAlignY=60&descColor=ccc" />
 
-  [![Typing
-  SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=3000&pause=1000&color=22D3EE&center=true&vCen
-  ter=true&width=480&lines=Organic+chemistry+meets+machine+learning+🧪;Building+ML+models+on+medical+data+🤖;React+dev+—+one+co
-  mponent+at+a+time+⚡;Testing+the+web+so+bugs+can't+hide+🎯;Always+learning%2C+always+building+🚀)](https://git.io/typing-svg)
+  [![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=3000&pause=1000&color=22D3EE&center=true&vCenter=true&width=480&lines=Chemist+%2
+  B+ML+Engineer+%2B+Frontend+Dev;Building+ML+models+on+medical+data;React+dev+-+one+component+at+a+time;Testing+so+bugs+cannot+hide;Always+learning%2C+always+building)](htt
+  ps://git.io/typing-svg)
 
   </div>
 
@@ -18,9 +16,8 @@
   - 🧪 Chemist at heart — built a database of organic compounds with visualization
   - 🤖 Training ML models on medical & time-series data with TensorFlow
   - ⚡ Learning React & building frontends that don't break
-  - 🎯 Making sure things actually work — Playwright test automation
+  - 🎯 Making sure things actually work — Selenium test automation
   - 📚 Currently exploring: deep learning, bioinformatics pipelines, UI/UX patterns
-  - 🤝 Open to collaborations on chemistry/bio data projects
 
   ---
 
@@ -53,31 +50,13 @@
 
   | Project | Description | Stack |
   |---------|-------------|-------|
-  | [🧪 organic-chemicals-db](https://github.com/marishachem/organic-chemicals-db) | Database of organic compounds with
-  interactive visualization & analysis | Python |
-  | [🤖 ML_learning](https://github.com/marishachem/ML_learning) | ML notebooks — diabetes prediction, time-series, anomaly
-  detection | TensorFlow, Jupyter |
-  | [⚡ learning_react](https://github.com/marishachem/learning_react) | React course experiments & mini apps including a movie
-  browser | React, JavaScript |
-  | [🎯 SeleniumTest](https://github.com/marishachem/SeleniumTest) | Selenium-based UI test automation scripts & patterns |
-  Selenium, Python |
-
-  ---
-
-  ## 📊 GitHub Stats
-  ---
-
-  ## 📊 GitHub Stats
-
-  <div align="center">
-    <img height="170" src="https://github-readme-stats.vercel.app/api?username=marishachem&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
-    <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=marishachem&layout=compact&theme=tokyonight&hide_border=true" />
-  </div>
+  | [🧪 organic-chemicals-db](https://github.com/marishachem/organic-chemicals-db) | Database of organic compounds with visualization & analysis | Python |
+  | [🤖 ML_learning](https://github.com/marishachem/ML_learning) | ML notebooks — diabetes prediction, time-series, anomaly detection | TensorFlow, Jupyter |
+  | [⚡ learning_react](https://github.com/marishachem/learning_react) | React course experiments & mini apps | React, JavaScript |
+  | [🎯 SeleniumTest](https://github.com/marishachem/SeleniumTest) | Selenium UI test automation scripts | Selenium, Python |
 
   ---
 
   <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" />
   </div>
-
-  ---
