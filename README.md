@@ -12,7 +12,7 @@
   - 🧪 Chemist at heart — built a database of organic compounds with visualization
   - 🤖 Training ML models on medical & time-series data with TensorFlow
   - ⚡ Learning React & building frontends that don't break
-  - 🎯 Making sure things actually work — Selenium test automation
+  - 🎯 Making sure things actually work — Playwright test automation
   - 📚 Currently exploring: deep learning, bioinformatics pipelines, UI/UX patterns
 
   ---
