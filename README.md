@@ -6,7 +6,10 @@
 
   ## 👤 About Me
 
-  - 🧪 Chemist at heart — built a database of organic compounds with visualization
+  - 🎓 Degree in **Organic Chemistry** — I know molecules from the inside out
+  - 🏭 Former **pharma industry** experience — real lab, real compounds, real stakes
+  - 💼 Now working in **software development** at a BI company
+  - 🧪 Built a database of organic compounds with visualization
   - 🤖 Training ML models on medical & time-series data with TensorFlow
   - ⚡ Learning React & building frontends that don't break
   - 🎯 Making sure things actually work — Playwright test automation
