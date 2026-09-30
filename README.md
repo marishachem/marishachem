@@ -1,8 +1,5 @@
   <div align="center">
-
-  # 👋 Hi, I'm Marina
-  ### Chemist · ML Engineer · Frontend Dev · QA
-
+    <img src="./header.svg" width="100%" />
   </div>
 
   ---
