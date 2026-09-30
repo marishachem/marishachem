@@ -1,7 +1,7 @@
- <div align="center">
+  <div align="center">
 
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Hi+Im+Marina&fontSize=42&fontColor=fff&a
-  nimation=twinkling&fontAlignY=38&desc=Chemist+%7C+ML+Engineer+%7C+Frontend+Dev+%7C+QA&descAlignY=60&descColor=ccc" />
+  # 👋 Hi, I'm Marina
+  ### Chemist · ML Engineer · Frontend Dev · QA
 
   </div>
 
