@@ -1,0 +1,79 @@
+<svg width="860" height="180" viewBox="0 0 860 180" xmlns="http://www.w3.org/2000/svg">
+<defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" style="stop-color:#0f0c29"/>
+    <stop offset="50%" style="stop-color:#302b63"/>
+    <stop offset="100%" style="stop-color:#1a1a3e"/>
+    </linearGradient>
+    <linearGradient id="wave1" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:0.6"/>
+    <stop offset="50%" style="stop-color:#06b6d4;stop-opacity:0.4"/>
+    <stop offset="100%" style="stop-color:#10b981;stop-opacity:0.6"/>
+    </linearGradient>
+    <linearGradient id="wave2" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" style="stop-color:#ec4899;stop-opacity:0.4"/>
+    <stop offset="50%" style="stop-color:#7c3aed;stop-opacity:0.3"/>
+    <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0.4"/>
+    </linearGradient>
+    <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" style="stop-color:#a78bfa"/>
+    <stop offset="50%" style="stop-color:#22d3ee"/>
+    <stop offset="100%" style="stop-color:#34d399"/>
+    </linearGradient>
+    <filter id="glow">
+    <feGaussianBlur stdDeviation="3" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+</defs>
+<rect width="860" height="180" fill="url(#bg)" rx="12"/>
+<ellipse cx="150" cy="90" rx="120" ry="80" fill="#7c3aed" opacity="0.12">
+    <animate attributeName="cx" values="150;180;150" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.12;0.18;0.12" dur="8s" repeatCount="indefinite"/>
+</ellipse>
+<ellipse cx="710" cy="90" rx="120" ry="80" fill="#06b6d4" opacity="0.12">
+    <animate attributeName="cx" values="710;680;710" dur="7s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.12;0.2;0.12" dur="7s" repeatCount="indefinite"/>
+</ellipse>
+<ellipse cx="430" cy="160" rx="160" ry="60" fill="#10b981" opacity="0.08">
+    <animate attributeName="ry" values="60;80;60" dur="6s" repeatCount="indefinite"/>
+</ellipse>
+<path fill="url(#wave1)">
+    <animate attributeName="d" dur="6s" repeatCount="indefinite"
+    values="M0,140 C120,100 240,160 430,130 C620,100 740,150 860,120 L860,180 L0,180 Z;M0,120 C140,150 260,100 430,140 C600,160 720,110 860,140 L860,180 L0,180 Z;M0,140
+C120,100 240,160 430,130 C620,100 740,150 860,120 L860,180 L0,180 Z"/>
+</path>
+<path fill="url(#wave2)">
+    <animate attributeName="d" dur="8s" repeatCount="indefinite"
+    values="M0,155 C100,130 300,170 430,150 C560,130 750,165 860,145 L860,180 L0,180 Z;M0,145 C150,165 280,135 430,158 C580,168 700,140 860,155 L860,180 L0,180 Z;M0,155
+C100,130 300,170 430,150 C560,130 750,165 860,145 L860,180 L0,180 Z"/>
+</path>
+<circle cx="80" cy="40" r="2.5" fill="#a78bfa" opacity="0.7">
+    <animate attributeName="cy" values="40;28;40" dur="4s" repeatCount="indefinite"/>
+</circle>
+<circle cx="200" cy="25" r="2" fill="#22d3ee" opacity="0.6">
+    <animate attributeName="cy" values="25;38;25" dur="5s" repeatCount="indefinite"/>
+</circle>
+<circle cx="660" cy="35" r="2" fill="#34d399" opacity="0.6">
+    <animate attributeName="cy" values="35;22;35" dur="6s" repeatCount="indefinite"/>
+</circle>
+<circle cx="780" cy="50" r="2.5" fill="#f472b6" opacity="0.5">
+    <animate attributeName="cy" values="50;36;50" dur="4.5s" repeatCount="indefinite"/>
+</circle>
+<circle cx="350" cy="20" r="1.8" fill="#fbbf24" opacity="0.5">
+    <animate attributeName="cy" values="20;32;20" dur="5.5s" repeatCount="indefinite"/>
+</circle>
+<circle cx="520" cy="30" r="2" fill="#7c3aed" opacity="0.5">
+    <animate attributeName="cy" values="30;18;30" dur="3.8s" repeatCount="indefinite"/>
+</circle>
+<text x="430" y="78" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+    font-size="36" font-weight="900" fill="url(#nameGrad)" filter="url(#glow)" letter-spacing="1">
+    Hi, I'm Marina 👋
+</text>
+<text x="430" y="112" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+    font-size="14" fill="#cbd5e1" letter-spacing="3" opacity="0.85">
+    CHEMIST · ML ENGINEER · FRONTEND DEV · QA
+</text>
+<line x1="280" y1="122" x2="580" y2="122" stroke="#7c3aed" stroke-width="1" opacity="0.4" stroke-dasharray="4 4">
+    <animate attributeName="opacity" values="0.2;0.6;0.2" dur="3s" repeatCount="indefinite"/>
+</line>
+</svg>
