@@ -46,7 +46,9 @@
 
   | Project | Description | Stack |
   |---------|-------------|-------|
-  | [🧪 organic-chemicals-db](https://github.com/marishachem/organic-chemicals-db) | Database of organic compounds with visualization & analysis | Python |
+  | [🧪 organic-chemicals-db](https://github.com/marishachem/organic-chemicals-db) | Full-stack app to search, visualize & save organic compounds. 2D/3D rendering, PubChem lookup, SQLite library | FastAPI, React, RDKit, SQLite |
+  | [🔬 molecule-visualizer](https://github.com/marishachem/molecule-visualizer) | Search any molecule by name — see its 2D structure, 3D model, and drug-likeness properties | Python, Streamlit, RDKit, py3Dmol |
+  | [🀄 hsk1-flashcards](https://github.com/marishachem/hsk1-flashcards) | Interactive flashcard app to study all 150 HSK 1 Chinese words with pinyin, examples & progress tracking | HTML, CSS, JavaScript |
   | [🤖 ML_learning](https://github.com/marishachem/ML_learning) | ML notebooks — diabetes prediction, time-series, anomaly detection | TensorFlow, Jupyter |
   | [⚡ learning_react](https://github.com/marishachem/learning_react) | React course experiments & mini apps | React, JavaScript |
   | [🎯 SeleniumTest](https://github.com/marishachem/SeleniumTest) | Selenium UI test automation scripts | Selenium, Python |
