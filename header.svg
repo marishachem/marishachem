@@ -64,7 +64,7 @@
 <!-- ══ 6K42 Cα backbone traces (right side), centered at 795,82 ══ -->
 <!-- α2B-adrenergic receptor–Gi1 complex: cryo-EM, 2019 -->
 <g clip-path="url(#headerClip)" filter="url(#proteinGlow)" opacity="0.65">
-<g transform="translate(900,90) scale(3)">
+<g transform="translate(720,90) scale(3)">
   <animateTransform attributeName="transform" type="rotate"
       from="0 0 0" to="360 0 0" dur="28s" repeatCount="indefinite" additive="sum"/>
   <!-- Chain R: α2B adrenergic receptor (GPCR) -->
