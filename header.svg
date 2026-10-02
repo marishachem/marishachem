@@ -56,64 +56,125 @@
     values="M0,155 C100,130 300,170 430,150 C560,130 750,165 860,145 L860,180 L0,180 Z;M0,145 C150,165 280,135 430,158 C580,168 700,140 860,155 L860,180 L0,180 Z;M0,155 C100,130 300,170 430,150 C560,130 750,165 860,145 L860,180 L0,180 Z"/>
 </path>
 
-<!-- ══ Organic molecules ══ -->
+<!-- ══ Amino acid side chains + protein fragments ══ -->
 
-<!-- 1. Benzene ring (top-left): flat hexagon + inner dashed aromatic circle -->
+<!-- 1. Phe sidechain: benzene ring + -CH₂-CH tether (top-left) -->
 <g filter="url(#molGlow)" opacity="0.72">
     <g>
     <animateTransform attributeName="transform" type="translate"
-        values="82,44; 82,36; 82,44" dur="5s" repeatCount="indefinite"
+        values="78,46; 78,38; 78,46" dur="5s" repeatCount="indefinite"
         calcMode="spline" keyTimes="0;0.5;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
-    <polygon points="17,0 8.5,-14.7 -8.5,-14.7 -17,0 -8.5,14.7 8.5,14.7"
+    <!-- Benzene ring -->
+    <polygon points="15,0 7.5,-13 -7.5,-13 -15,0 -7.5,13 7.5,13"
              fill="none" stroke="#a78bfa" stroke-width="1.5" stroke-linejoin="round"/>
-    <circle cx="0" cy="0" r="9" fill="none" stroke="#a78bfa" stroke-width="1" stroke-dasharray="4 2"/>
+    <circle cx="0" cy="0" r="8" fill="none" stroke="#a78bfa" stroke-width="1" stroke-dasharray="4 2"/>
+    <!-- -CH₂-Cα tether from top vertex -->
+    <line x1="0" y1="-13" x2="10" y2="-22" stroke="#a78bfa" stroke-width="1.5"/>
+    <line x1="10" y1="-22" x2="22" y2="-14" stroke="#a78bfa" stroke-width="1.5"/>
     </g>
 </g>
 
-<!-- 2. Alkene R-CH=CH-R (top-center, subtle) -->
-<g filter="url(#molGlow)" opacity="0.38">
+<!-- 2. Alpha helix ribbon (top, left of center) -->
+<g filter="url(#molGlow)" opacity="0.68">
     <g>
     <animateTransform attributeName="transform" type="translate"
-        values="430,22; 430,14; 430,22" dur="7s" repeatCount="indefinite"
+        values="228,33; 228,25; 228,33" dur="6.5s" repeatCount="indefinite"
         calcMode="spline" keyTimes="0;0.5;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
-    <line x1="-24" y1="7" x2="-8" y2="-5" stroke="#fbbf24" stroke-width="1.5"/>
-    <line x1="-8" y1="-5" x2="8" y2="7" stroke="#fbbf24" stroke-width="1.5"/>
-    <line x1="-6" y1="-8" x2="10" y2="4" stroke="#fbbf24" stroke-width="1.5"/>
-    <line x1="8" y1="7" x2="24" y2="-5" stroke="#fbbf24" stroke-width="1.5"/>
+    <path d="M-36,0 Q-27,-12 -18,0 Q-9,12 0,0 Q9,-12 18,0 Q27,12 36,0"
+          fill="none" stroke="#fb923c" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M-36,6 Q-27,-6 -18,6 Q-9,18 0,6 Q9,-6 18,6 Q27,18 36,6"
+          fill="none" stroke="#fb923c" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
+    <line x1="-18" y1="0" x2="-18" y2="6" stroke="#fb923c" stroke-width="1" opacity="0.45"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#fb923c" stroke-width="1" opacity="0.45"/>
+    <line x1="18" y1="0" x2="18" y2="6" stroke="#fb923c" stroke-width="1" opacity="0.45"/>
     </g>
 </g>
 
-<!-- 3. Propan-1-ol C-C-C-OH zigzag (top-right) -->
-<g filter="url(#molGlow)" opacity="0.65">
-    <g>
-    <animateTransform attributeName="transform" type="translate"
-        values="775,38; 775,30; 775,38" dur="6s" repeatCount="indefinite"
-        calcMode="spline" keyTimes="0;0.5;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
-    <line x1="-30" y1="8" x2="-14" y2="-5" stroke="#22d3ee" stroke-width="1.5"/>
-    <line x1="-14" y1="-5" x2="2" y2="8" stroke="#22d3ee" stroke-width="1.5"/>
-    <line x1="2" y1="8" x2="18" y2="-5" stroke="#22d3ee" stroke-width="1.5"/>
-    <text x="19" y="-3" font-size="10" fill="#22d3ee"
-          font-family="'Segoe UI', Arial, sans-serif">OH</text>
-    </g>
-</g>
-
-<!-- 4. Furan: 5-membered ring with O heteroatom (bottom-left) -->
+<!-- 3. Peptide backbone unit: HN-Cα-C(=O)-NH (top-center) -->
 <g filter="url(#molGlow)" opacity="0.62">
     <g>
     <animateTransform attributeName="transform" type="translate"
-        values="148,148; 148,140; 148,148" dur="4.5s" repeatCount="indefinite"
+        values="432,36; 432,28; 432,36" dur="7s" repeatCount="indefinite"
         calcMode="spline" keyTimes="0;0.5;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
-    <line x1="13.3" y1="-4.3" x2="8.2" y2="11.3" stroke="#34d399" stroke-width="1.5"/>
-    <line x1="8.2" y1="11.3" x2="-8.2" y2="11.3" stroke="#34d399" stroke-width="1.5"/>
-    <line x1="-8.2" y1="11.3" x2="-13.3" y2="-4.3" stroke="#34d399" stroke-width="1.5"/>
-    <line x1="-13.3" y1="-4.3" x2="-5.5" y2="-11.5" stroke="#34d399" stroke-width="1.5"/>
-    <line x1="5.5" y1="-11.5" x2="13.3" y2="-4.3" stroke="#34d399" stroke-width="1.5"/>
-    <text x="-4.5" y="-9" font-size="11" fill="#34d399"
+    <!-- HN label (N-terminus side) -->
+    <text x="-34" y="4" font-size="10" fill="#fbbf24"
+          font-family="'Segoe UI', Arial, sans-serif">HN</text>
+    <!-- N to Cα bond -->
+    <line x1="-16" y1="0" x2="-4" y2="-12" stroke="#fbbf24" stroke-width="1.5"/>
+    <!-- Cα to carbonyl C -->
+    <line x1="-4" y1="-12" x2="10" y2="0" stroke="#fbbf24" stroke-width="1.5"/>
+    <!-- C=O (two parallel vertical lines going up) -->
+    <line x1="10" y1="0" x2="10" y2="-14" stroke="#fbbf24" stroke-width="1.5"/>
+    <line x1="12.5" y1="0" x2="12.5" y2="-14" stroke="#fbbf24" stroke-width="1.5"/>
+    <text x="7.5" y="-16" font-size="10" fill="#fbbf24"
           font-family="'Segoe UI', Arial, sans-serif">O</text>
+    <!-- Peptide C-N bond -->
+    <line x1="10" y1="0" x2="26" y2="-12" stroke="#fbbf24" stroke-width="1.5"/>
+    <!-- NH label (next residue) -->
+    <text x="25" y="-14" font-size="10" fill="#fbbf24"
+          font-family="'Segoe UI', Arial, sans-serif">NH</text>
     </g>
 </g>
 
-<!-- 5. Glycine: H₂N-CH₂-C(=O)-OH (bottom-right) -->
+<!-- 4. Beta strand arrow (top, right of center) -->
+<g filter="url(#molGlow)" opacity="0.65">
+    <g>
+    <animateTransform attributeName="transform" type="translate"
+        values="608,32; 608,24; 608,32" dur="5.8s" repeatCount="indefinite"
+        calcMode="spline" keyTimes="0;0.5;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
+    <path d="M-30,-5 L6,-5 L6,-12 L26,0 L6,12 L6,5 L-30,5 Z"
+          fill="#60a5fa" fill-opacity="0.22" stroke="#60a5fa" stroke-width="1.5"
+          stroke-linejoin="round"/>
+    </g>
+</g>
+
+<!-- 5. Imidazole (His sidechain): 5-ring with two N atoms (top-right) -->
+<g filter="url(#molGlow)" opacity="0.65">
+    <g>
+    <animateTransform attributeName="transform" type="translate"
+        values="762,40; 762,32; 762,40" dur="6s" repeatCount="indefinite"
+        calcMode="spline" keyTimes="0;0.5;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
+    <!-- Pentagon ring -->
+    <polygon points="0,-13 12.4,-4 7.6,10.5 -7.6,10.5 -12.4,-4"
+             fill="none" stroke="#22d3ee" stroke-width="1.5"/>
+    <!-- Aromatic inner circle -->
+    <circle cx="0" cy="1" r="6.5" fill="none" stroke="#22d3ee" stroke-width="1" stroke-dasharray="3 2"/>
+    <!-- =N label (top vertex, pyridine-type) -->
+    <text x="-4" y="-10" font-size="10" fill="#22d3ee"
+          font-family="'Segoe UI', Arial, sans-serif">N</text>
+    <!-- NH label (upper-left vertex, pyrrole-type) -->
+    <text x="-26" y="-1" font-size="10" fill="#22d3ee"
+          font-family="'Segoe UI', Arial, sans-serif">NH</text>
+    </g>
+</g>
+
+<!-- 6. Indole (Trp sidechain): fused benzene+pyrrole with NH (bottom-left) -->
+<g filter="url(#molGlow)" opacity="0.62">
+    <g>
+    <animateTransform attributeName="transform" type="translate"
+        values="135,147; 135,139; 135,147" dur="4.5s" repeatCount="indefinite"
+        calcMode="spline" keyTimes="0;0.5;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
+    <!-- 6-ring (benzene part) with aromatic circle -->
+    <polygon points="0,-6 0,6 -10,12 -21,6 -21,-6 -10,-12"
+             fill="none" stroke="#34d399" stroke-width="1.5" stroke-linejoin="round"/>
+    <circle cx="-10.5" cy="0" r="6" fill="none" stroke="#34d399" stroke-width="1" stroke-dasharray="3 2"/>
+    <!-- 5-ring (pyrrole part), not including shared edge C7a-C3a which is the right edge of hexagon -->
+    <!-- C7a=(0,-6) → N1 → C2 → C3 → C3a=(0,6) -->
+    <!-- Short bond from C7a to just before N1 -->
+    <line x1="0" y1="-6" x2="8" y2="-8.5" stroke="#34d399" stroke-width="1.5"/>
+    <!-- NH label at N1 position -->
+    <text x="9" y="-8" font-size="9.5" fill="#34d399"
+          font-family="'Segoe UI', Arial, sans-serif">NH</text>
+    <!-- Bond from N1 to C2 -->
+    <line x1="20" y1="-7" x2="18.5" y2="0" stroke="#34d399" stroke-width="1.5"/>
+    <!-- C2 to C3 -->
+    <line x1="18.5" y1="0" x2="11.5" y2="9.7" stroke="#34d399" stroke-width="1.5"/>
+    <!-- C3 to C3a=(0,6) -->
+    <line x1="11.5" y1="9.7" x2="0" y2="6" stroke="#34d399" stroke-width="1.5"/>
+    </g>
+</g>
+
+<!-- 7. Glycine: H₂N-CH₂-C(=O)-OH (bottom-right) -->
 <g filter="url(#molGlow)" opacity="0.58">
     <g>
     <animateTransform attributeName="transform" type="translate"
@@ -123,50 +184,13 @@
           font-family="'Segoe UI', Arial, sans-serif">H&#x2082;N</text>
     <line x1="-13" y1="0" x2="0" y2="-11" stroke="#f472b6" stroke-width="1.5"/>
     <line x1="0" y1="-11" x2="14" y2="0" stroke="#f472b6" stroke-width="1.5"/>
-    <line x1="14" y1="0" x2="14" y2="-13" stroke="#f472b6" stroke-width="1.5"/>
-    <line x1="16.5" y1="0" x2="16.5" y2="-13" stroke="#f472b6" stroke-width="1.5"/>
-    <text x="11.5" y="-15" font-size="10" fill="#f472b6"
+    <line x1="14" y1="0" x2="14" y2="-14" stroke="#f472b6" stroke-width="1.5"/>
+    <line x1="16.5" y1="0" x2="16.5" y2="-14" stroke="#f472b6" stroke-width="1.5"/>
+    <text x="11.5" y="-16" font-size="10" fill="#f472b6"
           font-family="'Segoe UI', Arial, sans-serif">O</text>
     <line x1="14" y1="0" x2="27" y2="9" stroke="#f472b6" stroke-width="1.5"/>
     <text x="28" y="13" font-size="10" fill="#f472b6"
           font-family="'Segoe UI', Arial, sans-serif">OH</text>
-    </g>
-</g>
-
-<!-- ══ Protein secondary structures ══ -->
-
-<!-- 6. Alpha helix ribbon (top area, left of center)
-     Cartoon ribbon: two sinusoidal paths suggesting a coiled helical tube,
-     with vertical cross-strokes at each turn for depth -->
-<g filter="url(#molGlow)" opacity="0.68">
-    <g>
-    <animateTransform attributeName="transform" type="translate"
-        values="228,32; 228,24; 228,32" dur="6.5s" repeatCount="indefinite"
-        calcMode="spline" keyTimes="0;0.5;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
-    <!-- Main ribbon top edge (sine wave) -->
-    <path d="M-36,0 Q-27,-12 -18,0 Q-9,12 0,0 Q9,-12 18,0 Q27,12 36,0"
-          fill="none" stroke="#fb923c" stroke-width="2.2" stroke-linecap="round"/>
-    <!-- Ribbon bottom edge (same wave offset +6) -->
-    <path d="M-36,6 Q-27,-6 -18,6 Q-9,18 0,6 Q9,-6 18,6 Q27,18 36,6"
-          fill="none" stroke="#fb923c" stroke-width="1" stroke-linecap="round" opacity="0.55"/>
-    <!-- Cross-strokes at each full turn to suggest ribbon width -->
-    <line x1="-18" y1="0" x2="-18" y2="6" stroke="#fb923c" stroke-width="1" opacity="0.5"/>
-    <line x1="0" y1="0" x2="0" y2="6" stroke="#fb923c" stroke-width="1" opacity="0.5"/>
-    <line x1="18" y1="0" x2="18" y2="6" stroke="#fb923c" stroke-width="1" opacity="0.5"/>
-    </g>
-</g>
-
-<!-- 7. Beta strand arrow (top area, right of center)
-     Cartoon broad arrow: the classic ribbon-diagram beta strand symbol -->
-<g filter="url(#molGlow)" opacity="0.65">
-    <g>
-    <animateTransform attributeName="transform" type="translate"
-        values="608,31; 608,23; 608,31" dur="5.8s" repeatCount="indefinite"
-        calcMode="spline" keyTimes="0;0.5;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
-    <!-- Broad arrow body + arrowhead -->
-    <path d="M-30,-5 L6,-5 L6,-12 L26,0 L6,12 L6,5 L-30,5 Z"
-          fill="#60a5fa" fill-opacity="0.22" stroke="#60a5fa" stroke-width="1.5"
-          stroke-linejoin="round"/>
     </g>
 </g>
 
