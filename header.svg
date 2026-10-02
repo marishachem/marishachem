@@ -64,7 +64,9 @@
 <!-- ══ 6K42 Cα backbone traces (right side), centered at 795,82 ══ -->
 <!-- α2B-adrenergic receptor–Gi1 complex: cryo-EM, 2019 -->
 <g clip-path="url(#headerClip)" filter="url(#proteinGlow)" opacity="0.65">
-<g transform="translate(840,90) scale(3)">
+<g transform="translate(900,90) scale(3)">
+  <animateTransform attributeName="transform" type="rotate"
+      from="0 0 0" to="360 0 0" dur="28s" repeatCount="indefinite" additive="sum"/>
   <!-- Chain R: α2B adrenergic receptor (GPCR) -->
   <path d="M27.3,-8.2 L24.9,-8.8 L21.4,-8.6 L17.3,-7.6 L13.9,-4.8 L12.6,-1.4 L14.6,0.4 L12.1,-2.2 L8.4,-2.6 L4.3,-1.5 L7.9,5.0 L2.7,8.1 L0.2,15.1 L-1.3,11.4 L-2.2,5.7 L0.3,0.6 L4.1,-2.1 L5.8,-2.8 L1.7,-3.7 L3.4,-8.2 L7.3,-10.0 L12.0,-8.0 L2.0,-8.6 L-3.7,-16.8 L-13.8,-10.2 L-12.4,-2.2 L-7.3,1.4 L-3.7,2.9 L-3.9,4.6 L-5.4,10.1 L-4.7,16.6 L-1.4,21.5 L1.7,24.0 L2.4,25.6 L0.2,28.2 L-4.1,34.8 L-8.8,31.7 L-10.3,24.6 L-10.4,16.5 L-13.7,16.2 L-15.6,13.0 L-14.5,9.3 L-12.2,9.0 L-12.0,10.8 L-14.5,12.4 L-19.4,8.9 L-23.9,4.6 L-4.6,-7.9 L-3.9,2.4 L-12.9,11.0 L-17.5,20.5 L-10.6,22.4 L-6.6,19.8 L-6.4,18.4 L-5.9,27.3 L-0.5,31.0 L4.6,31.9 L6.8,32.0 L7.3,34.5 L8.2,39.4 L12.0,43.8 L18.2,45.0 L34.0,38.3 L29.4,39.2 L23.6,36.5 L19.7,30.7 L18.9,26.1 L18.3,24.3 L15.1,25.5 L10.5,23.6 L7.6,17.9 L6.2,17.1 L4.3,20.0 L-0.3,24.3 L-5.8,27.3 L1.8,24.0 L10.4,15.1 L13.6,13.9 L14.1,9.8 L11.7,6.8 L8.8,6.6 L8.7,6.0 L11.2,10.1 L15.9,14.8 L19.7,13.1 L19.5,14.8 L20.8,9.0 L20.0,2.5 L19.9,-3.5 L24.7,-8.8"
         fill="none" stroke="#e879f9" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
