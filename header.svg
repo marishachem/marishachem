@@ -63,8 +63,8 @@
 
 <!-- ══ 6K42 Cα backbone traces (right side), centered at 795,82 ══ -->
 <!-- α2B-adrenergic receptor–Gi1 complex: cryo-EM, 2019 -->
-<g clip-path="url(#headerClip)" filter="url(#proteinGlow)" opacity="0.58">
-<g transform="translate(795,82)">
+<g clip-path="url(#headerClip)" filter="url(#proteinGlow)" opacity="0.65">
+<g transform="translate(840,90) scale(3)">
   <!-- Chain R: α2B adrenergic receptor (GPCR) -->
   <path d="M27.3,-8.2 L24.9,-8.8 L21.4,-8.6 L17.3,-7.6 L13.9,-4.8 L12.6,-1.4 L14.6,0.4 L12.1,-2.2 L8.4,-2.6 L4.3,-1.5 L7.9,5.0 L2.7,8.1 L0.2,15.1 L-1.3,11.4 L-2.2,5.7 L0.3,0.6 L4.1,-2.1 L5.8,-2.8 L1.7,-3.7 L3.4,-8.2 L7.3,-10.0 L12.0,-8.0 L2.0,-8.6 L-3.7,-16.8 L-13.8,-10.2 L-12.4,-2.2 L-7.3,1.4 L-3.7,2.9 L-3.9,4.6 L-5.4,10.1 L-4.7,16.6 L-1.4,21.5 L1.7,24.0 L2.4,25.6 L0.2,28.2 L-4.1,34.8 L-8.8,31.7 L-10.3,24.6 L-10.4,16.5 L-13.7,16.2 L-15.6,13.0 L-14.5,9.3 L-12.2,9.0 L-12.0,10.8 L-14.5,12.4 L-19.4,8.9 L-23.9,4.6 L-4.6,-7.9 L-3.9,2.4 L-12.9,11.0 L-17.5,20.5 L-10.6,22.4 L-6.6,19.8 L-6.4,18.4 L-5.9,27.3 L-0.5,31.0 L4.6,31.9 L6.8,32.0 L7.3,34.5 L8.2,39.4 L12.0,43.8 L18.2,45.0 L34.0,38.3 L29.4,39.2 L23.6,36.5 L19.7,30.7 L18.9,26.1 L18.3,24.3 L15.1,25.5 L10.5,23.6 L7.6,17.9 L6.2,17.1 L4.3,20.0 L-0.3,24.3 L-5.8,27.3 L1.8,24.0 L10.4,15.1 L13.6,13.9 L14.1,9.8 L11.7,6.8 L8.8,6.6 L8.7,6.0 L11.2,10.1 L15.9,14.8 L19.7,13.1 L19.5,14.8 L20.8,9.0 L20.0,2.5 L19.9,-3.5 L24.7,-8.8"
         fill="none" stroke="#e879f9" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
@@ -80,22 +80,12 @@
   <!-- Chain H: nanobody -->
   <path d="M-38.5,-8.4 L-45.2,-9.7 L-57.2,-9.9 L-68.4,-15.9 L-69.9,-21.8 L-64.2,-17.0 L-55.1,-9.9 L-47.3,-9.2 L-40.1,-3.1 L-30.9,-3.2 L-27.0,-7.5 L-36.4,-15.3 L-44.6,-25.1 L-54.8,-33.0 L-52.6,-37.8 L-45.2,-32.5 L-40.8,-21.7 L-30.3,-13.5 L-30.8,-8.1 L-34.2,-17.0 L-40.2,-29.3 L-46.4,-27.2 L-50.7,-20.0 L-46.0,-14.0 L-40.1,-5.4 L-37.2,5.0 L-43.5,-3.5 L-48.6,-12.3 L-56.3,-16.8 L-62.0,-27.1 L-56.9,-28.8 L-55.2,-25.2 L-44.2,-17.0 L-31.3,-18.2 L-18.3,-19.2 L-21.4,-21.1 L-33.7,-23.8 L-41.3,-19.8 L-51.6,-17.5 L-61.3,-21.8 L-72.7,-28.1 L-33.6,-43.4 L-38.0,-49.9 L-45.1,-53.5 L-45.4,-52.9 L-44.0,-49.7 L-37.6,-51.4 L-33.5,-51.5 L-33.7,-48.2 L-28.6,-50.2 L-20.5,-42.6 L-9.4,-39.4 L-16.0,-34.7 L-27.6,-37.4 L-37.4,-33.6 L-47.8,-31.7 L-51.3,-25.0 L-39.5,-27.0 L-28.6,-33.5 L-23.4,-37.7 L-24.4,-30.4 L-31.2,-23.4 L-26.4,-34.6 L-25.0,-41.2 L-20.9,-47.5 L-23.0,-50.3 L-27.2,-48.7 L-32.0,-44.5 L-37.3,-43.3 L-45.0,-35.0 L-46.9,-37.6 L-39.8,-38.5 L-31.0,-37.7 L-27.5,-34.2 L-36.2,-33.0 L-41.9,-43.5 L-44.3,-45.1 L-50.4,-47.8"
         fill="none" stroke="#60a5fa" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-  <!-- Chain labels -->
-  <text x="22" y="-12" font-size="7.5" fill="#e879f9" opacity="0.9"
-        font-family="'Segoe UI', Arial, sans-serif" font-weight="600">&#x3B1;2BAR</text>
-  <text x="-16" y="-36" font-size="7.5" fill="#818cf8" opacity="0.9"
-        font-family="'Segoe UI', Arial, sans-serif" font-weight="600">G&#x3B1;i</text>
-  <text x="38" y="26" font-size="7.5" fill="#34d399" opacity="0.9"
-        font-family="'Segoe UI', Arial, sans-serif" font-weight="600">G&#x3B2;</text>
-  <text x="28" y="-38" font-size="7.5" fill="#fbbf24" opacity="0.9"
-        font-family="'Segoe UI', Arial, sans-serif" font-weight="600">G&#x3B3;</text>
-  <text x="-72" y="-30" font-size="7.5" fill="#60a5fa" opacity="0.9"
-        font-family="'Segoe UI', Arial, sans-serif" font-weight="600">Nb</text>
-  <!-- PDB label -->
-  <text x="-72" y="70" font-size="7" fill="#94a3b8" opacity="0.6"
-        font-family="'Segoe UI', Arial, sans-serif">PDB: 6K42</text>
 </g>
 </g>
+
+<!-- PDB credit -->
+<text x="848" y="172" font-size="7" fill="#94a3b8" opacity="0.5"
+      font-family="'Segoe UI', Arial, sans-serif" text-anchor="end">PDB: 6K42</text>
 
 <!-- ══ Title ══ -->
 <text x="370" y="78" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
