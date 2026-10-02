@@ -28,9 +28,15 @@
     <feGaussianBlur stdDeviation="2" result="blur"/>
     <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
+    <filter id="proteinGlow">
+    <feGaussianBlur stdDeviation="1.2" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="headerClip">
+    <rect width="860" height="180" rx="12"/>
+    </clipPath>
 </defs>
 
-<!-- Background -->
 <rect width="860" height="180" fill="url(#bg)" rx="12"/>
 
 <!-- Ambient glows -->
@@ -38,9 +44,8 @@
     <animate attributeName="cx" values="150;180;150" dur="8s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0.12;0.18;0.12" dur="8s" repeatCount="indefinite"/>
 </ellipse>
-<ellipse cx="710" cy="90" rx="120" ry="80" fill="#06b6d4" opacity="0.12">
+<ellipse cx="710" cy="90" rx="120" ry="80" fill="#7c3aed" opacity="0.1">
     <animate attributeName="cx" values="710;680;710" dur="7s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.12;0.2;0.12" dur="7s" repeatCount="indefinite"/>
 </ellipse>
 <ellipse cx="430" cy="160" rx="160" ry="60" fill="#10b981" opacity="0.08">
     <animate attributeName="ry" values="60;80;60" dur="6s" repeatCount="indefinite"/>
@@ -56,19 +61,53 @@
     values="M0,155 C100,130 300,170 430,150 C560,130 750,165 860,145 L860,180 L0,180 Z;M0,145 C150,165 280,135 430,158 C580,168 700,140 860,155 L860,180 L0,180 Z;M0,155 C100,130 300,170 430,150 C560,130 750,165 860,145 L860,180 L0,180 Z"/>
 </path>
 
-<!-- ══ Amino acid side chains + protein fragments ══ -->
+<!-- ══ 6K42 Cα backbone traces (right side), centered at 795,82 ══ -->
+<!-- α2B-adrenergic receptor–Gi1 complex: cryo-EM, 2019 -->
+<g clip-path="url(#headerClip)" filter="url(#proteinGlow)" opacity="0.58">
+<g transform="translate(795,82)">
+  <!-- Chain R: α2B adrenergic receptor (GPCR) -->
+  <path d="M27.3,-8.2 L24.9,-8.8 L21.4,-8.6 L17.3,-7.6 L13.9,-4.8 L12.6,-1.4 L14.6,0.4 L12.1,-2.2 L8.4,-2.6 L4.3,-1.5 L7.9,5.0 L2.7,8.1 L0.2,15.1 L-1.3,11.4 L-2.2,5.7 L0.3,0.6 L4.1,-2.1 L5.8,-2.8 L1.7,-3.7 L3.4,-8.2 L7.3,-10.0 L12.0,-8.0 L2.0,-8.6 L-3.7,-16.8 L-13.8,-10.2 L-12.4,-2.2 L-7.3,1.4 L-3.7,2.9 L-3.9,4.6 L-5.4,10.1 L-4.7,16.6 L-1.4,21.5 L1.7,24.0 L2.4,25.6 L0.2,28.2 L-4.1,34.8 L-8.8,31.7 L-10.3,24.6 L-10.4,16.5 L-13.7,16.2 L-15.6,13.0 L-14.5,9.3 L-12.2,9.0 L-12.0,10.8 L-14.5,12.4 L-19.4,8.9 L-23.9,4.6 L-4.6,-7.9 L-3.9,2.4 L-12.9,11.0 L-17.5,20.5 L-10.6,22.4 L-6.6,19.8 L-6.4,18.4 L-5.9,27.3 L-0.5,31.0 L4.6,31.9 L6.8,32.0 L7.3,34.5 L8.2,39.4 L12.0,43.8 L18.2,45.0 L34.0,38.3 L29.4,39.2 L23.6,36.5 L19.7,30.7 L18.9,26.1 L18.3,24.3 L15.1,25.5 L10.5,23.6 L7.6,17.9 L6.2,17.1 L4.3,20.0 L-0.3,24.3 L-5.8,27.3 L1.8,24.0 L10.4,15.1 L13.6,13.9 L14.1,9.8 L11.7,6.8 L8.8,6.6 L8.7,6.0 L11.2,10.1 L15.9,14.8 L19.7,13.1 L19.5,14.8 L20.8,9.0 L20.0,2.5 L19.9,-3.5 L24.7,-8.8"
+        fill="none" stroke="#e879f9" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Chain A: Gαi1 -->
+  <path d="M-14.6,-32.6 L-21.0,-26.2 L-22.2,-19.4 L-19.6,-13.5 L-14.8,-8.8 L-11.6,-4.0 L-10.6,2.0 L-12.6,8.5 L-11.1,15.0 L-5.8,19.1 L0.0,25.0 L6.4,30.6 L13.6,35.4 L9.8,41.2 L-0.2,40.1 L-3.8,39.3 L-7.8,37.9 L-17.1,32.6 L0.2,21.3 L-7.1,28.7 L-12.6,33.9 L-15.6,34.1 L-6.4,29.5 L1.2,25.4 L7.8,27.9 L10.6,21.6 L17.7,19.1 L13.5,13.8 L10.4,13.0 L8.5,18.0 L8.0,30.1 L12.4,35.6 L13.2,46.0 L17.5,48.1 L21.3,47.4 L22.4,41.6 L25.1,36.8 L27.5,33.3 L26.7,31.7 L23.4,29.3 L24.8,17.9 L21.7,22.6 L14.9,30.9 L13.5,40.2 L8.9,48.9 L7.5,60.1 L14.0,63.0 L21.5,63.6 L25.3,62.1 L32.6,57.3 L36.4,52.2 L38.4,55.0 L30.8,66.3 L19.6,64.2 L23.6,58.8 L26.6,53.6 L26.7,48.9 L25.2,42.2 L28.5,33.8 L27.7,33.5 L19.8,31.5 L14.5,41.6 L9.5,51.6 L-2.5,55.4 L-7.3,50.2 L-1.9,44.3 L2.7,41.2 L5.9,39.4 L7.4,36.8 L6.9,32.3 L7.9,26.5 L10.8,21.3 L16.4,28.1"
+        fill="none" stroke="#818cf8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Chain B: Gβ -->
+  <path d="M40.0,23.3 L34.4,19.1 L35.0,12.9 L38.1,7.5 L42.1,3.4 L43.9,-1.5 L38.6,-6.2 L43.5,-13.6 L44.3,-20.5 L45.2,-24.5 L46.6,-25.1 L42.0,-29.6 L39.4,-34.7 L31.0,-31.7 L26.6,-26.7 L16.8,-21.6 L5.4,-17.9 L0.9,-6.6 L0.2,3.9 L6.8,-0.1 L5.0,-7.7 L-1.9,-18.4 L0.9,-24.2 L-1.0,-13.9 L-0.2,-0.8 L-3.4,8.8 L-6.0,-1.6 L-4.7,-12.8 L-2.4,-23.7 L-8.0,-15.9 L-13.4,-8.2 L-12.4,4.3 L-6.2,12.1 L1.7,6.1 L1.1,-3.3 L-4.8,-14.1 L-9.0,-18.3 L-7.4,-7.4 L-0.9,4.8 L-1.5,14.4 L-3.9,4.3 L-12.9,-3.3 L-19.4,-13.7 L-29.1,-7.3 L-19.1,-3.7 L-17.0,-1.2 L-7.5,5.6 L2.4,12.0 L6.6,11.9 L8.0,-0.5 L-0.1,-10.5 L-9.2,-13.4 L-1.4,-6.3 L8.1,2.5 L11.3,12.3 L9.0,2.5 L-3.1,-1.5 L-14.4,-5.9 L-8.7,3.5 L2.5,0.3 L13.0,6.1 L22.4,9.8 L16.3,4.8 L13.6,-5.5 L12.2,-18.2 L6.5,-18.0 L13.3,-10.9 L19.4,-1.2 L27.5,6.8 L24.4,-4.3 L15.9,-7.4 L5.7,-11.3 L13.9,-4.0 L24.5,-7.9 L33.1,-2.7 L36.3,3.7 L24.8,0.8 L19.8,-8.2 L19.9,-20.9 L19.0,-23.0 L23.7,-15.6 L26.3,-5.5 L34.6,1.3 L31.2,-8.8 L30.3,-13.7 L28.8,-21.5 L36.2,-14.7 L37.1,-16.1 L38.7,-8.7 L40.2,-4.7 L31.6,2.0 L21.4,-1.9 L18.6,-15.1 L15.9,-27.7 L27.3,-27.0 L22.8,-16.3 L25.3,-4.3 L23.8,-2.9 L27.3,-13.9 L31.8,-22.8 L38.3,-24.4 L34.3,-18.8 L28.0,-16.6 L20.7,-7.6 L17.6,2.0 L15.5,-2.5 L11.5,-15.1 L6.9,-25.6 L10.2,-28.1 L10.3,-15.1 L12.6,-2.7 L5.8,-1.1 L8.9,-12.5 L13.7,-24.7"
+        fill="none" stroke="#34d399" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Chain G: Gγ -->
+  <path d="M23.9,21.1 L23.1,14.1 L22.8,7.4 L25.2,2.2 L29.4,-2.9 L31.7,-9.4 L31.0,-20.8 L37.9,-26.1 L35.8,-30.9 L34.4,-32.9 L31.6,-32.9 L25.8,-33.5 L20.2,-37.8 L15.5,-38.2 L17.9,-30.0 L18.5,-35.0 L7.8,-37.6 L6.0,-34.7 L5.9,-31.3"
+        fill="none" stroke="#fbbf24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Chain H: nanobody -->
+  <path d="M-38.5,-8.4 L-45.2,-9.7 L-57.2,-9.9 L-68.4,-15.9 L-69.9,-21.8 L-64.2,-17.0 L-55.1,-9.9 L-47.3,-9.2 L-40.1,-3.1 L-30.9,-3.2 L-27.0,-7.5 L-36.4,-15.3 L-44.6,-25.1 L-54.8,-33.0 L-52.6,-37.8 L-45.2,-32.5 L-40.8,-21.7 L-30.3,-13.5 L-30.8,-8.1 L-34.2,-17.0 L-40.2,-29.3 L-46.4,-27.2 L-50.7,-20.0 L-46.0,-14.0 L-40.1,-5.4 L-37.2,5.0 L-43.5,-3.5 L-48.6,-12.3 L-56.3,-16.8 L-62.0,-27.1 L-56.9,-28.8 L-55.2,-25.2 L-44.2,-17.0 L-31.3,-18.2 L-18.3,-19.2 L-21.4,-21.1 L-33.7,-23.8 L-41.3,-19.8 L-51.6,-17.5 L-61.3,-21.8 L-72.7,-28.1 L-33.6,-43.4 L-38.0,-49.9 L-45.1,-53.5 L-45.4,-52.9 L-44.0,-49.7 L-37.6,-51.4 L-33.5,-51.5 L-33.7,-48.2 L-28.6,-50.2 L-20.5,-42.6 L-9.4,-39.4 L-16.0,-34.7 L-27.6,-37.4 L-37.4,-33.6 L-47.8,-31.7 L-51.3,-25.0 L-39.5,-27.0 L-28.6,-33.5 L-23.4,-37.7 L-24.4,-30.4 L-31.2,-23.4 L-26.4,-34.6 L-25.0,-41.2 L-20.9,-47.5 L-23.0,-50.3 L-27.2,-48.7 L-32.0,-44.5 L-37.3,-43.3 L-45.0,-35.0 L-46.9,-37.6 L-39.8,-38.5 L-31.0,-37.7 L-27.5,-34.2 L-36.2,-33.0 L-41.9,-43.5 L-44.3,-45.1 L-50.4,-47.8"
+        fill="none" stroke="#60a5fa" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Chain labels -->
+  <text x="22" y="-12" font-size="7.5" fill="#e879f9" opacity="0.9"
+        font-family="'Segoe UI', Arial, sans-serif" font-weight="600">&#x3B1;2BAR</text>
+  <text x="-16" y="-36" font-size="7.5" fill="#818cf8" opacity="0.9"
+        font-family="'Segoe UI', Arial, sans-serif" font-weight="600">G&#x3B1;i</text>
+  <text x="38" y="26" font-size="7.5" fill="#34d399" opacity="0.9"
+        font-family="'Segoe UI', Arial, sans-serif" font-weight="600">G&#x3B2;</text>
+  <text x="28" y="-38" font-size="7.5" fill="#fbbf24" opacity="0.9"
+        font-family="'Segoe UI', Arial, sans-serif" font-weight="600">G&#x3B3;</text>
+  <text x="-72" y="-30" font-size="7.5" fill="#60a5fa" opacity="0.9"
+        font-family="'Segoe UI', Arial, sans-serif" font-weight="600">Nb</text>
+  <!-- PDB label -->
+  <text x="-72" y="70" font-size="7" fill="#94a3b8" opacity="0.6"
+        font-family="'Segoe UI', Arial, sans-serif">PDB: 6K42</text>
+</g>
+</g>
 
-<!-- 1. Phe sidechain: benzene ring + -CH₂-CH tether (top-left) -->
+<!-- ══ Floating amino acid structures (left side + overlay) ══ -->
+
+<!-- 1. Phe sidechain: benzene + CH₂ tether (top-left) -->
 <g filter="url(#molGlow)" opacity="0.72">
     <g>
     <animateTransform attributeName="transform" type="translate"
         values="78,46; 78,38; 78,46" dur="5s" repeatCount="indefinite"
         calcMode="spline" keyTimes="0;0.5;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
-    <!-- Benzene ring -->
     <polygon points="15,0 7.5,-13 -7.5,-13 -15,0 -7.5,13 7.5,13"
              fill="none" stroke="#a78bfa" stroke-width="1.5" stroke-linejoin="round"/>
     <circle cx="0" cy="0" r="8" fill="none" stroke="#a78bfa" stroke-width="1" stroke-dasharray="4 2"/>
-    <!-- -CH₂-Cα tether from top vertex -->
     <line x1="0" y1="-13" x2="10" y2="-22" stroke="#a78bfa" stroke-width="1.5"/>
     <line x1="10" y1="-22" x2="22" y2="-14" stroke="#a78bfa" stroke-width="1.5"/>
     </g>
@@ -96,21 +135,15 @@
     <animateTransform attributeName="transform" type="translate"
         values="432,36; 432,28; 432,36" dur="7s" repeatCount="indefinite"
         calcMode="spline" keyTimes="0;0.5;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
-    <!-- HN label (N-terminus side) -->
     <text x="-34" y="4" font-size="10" fill="#fbbf24"
           font-family="'Segoe UI', Arial, sans-serif">HN</text>
-    <!-- N to Cα bond -->
     <line x1="-16" y1="0" x2="-4" y2="-12" stroke="#fbbf24" stroke-width="1.5"/>
-    <!-- Cα to carbonyl C -->
     <line x1="-4" y1="-12" x2="10" y2="0" stroke="#fbbf24" stroke-width="1.5"/>
-    <!-- C=O (two parallel vertical lines going up) -->
     <line x1="10" y1="0" x2="10" y2="-14" stroke="#fbbf24" stroke-width="1.5"/>
     <line x1="12.5" y1="0" x2="12.5" y2="-14" stroke="#fbbf24" stroke-width="1.5"/>
     <text x="7.5" y="-16" font-size="10" fill="#fbbf24"
           font-family="'Segoe UI', Arial, sans-serif">O</text>
-    <!-- Peptide C-N bond -->
     <line x1="10" y1="0" x2="26" y2="-12" stroke="#fbbf24" stroke-width="1.5"/>
-    <!-- NH label (next residue) -->
     <text x="25" y="-14" font-size="10" fill="#fbbf24"
           font-family="'Segoe UI', Arial, sans-serif">NH</text>
     </g>
@@ -128,57 +161,45 @@
     </g>
 </g>
 
-<!-- 5. Imidazole (His sidechain): 5-ring with two N atoms (top-right) -->
-<g filter="url(#molGlow)" opacity="0.65">
+<!-- 5. Imidazole (His sidechain, floating over protein) -->
+<g filter="url(#molGlow)" opacity="0.72">
     <g>
     <animateTransform attributeName="transform" type="translate"
-        values="762,40; 762,32; 762,40" dur="6s" repeatCount="indefinite"
+        values="730,42; 730,34; 730,42" dur="6s" repeatCount="indefinite"
         calcMode="spline" keyTimes="0;0.5;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
-    <!-- Pentagon ring -->
     <polygon points="0,-13 12.4,-4 7.6,10.5 -7.6,10.5 -12.4,-4"
              fill="none" stroke="#22d3ee" stroke-width="1.5"/>
-    <!-- Aromatic inner circle -->
     <circle cx="0" cy="1" r="6.5" fill="none" stroke="#22d3ee" stroke-width="1" stroke-dasharray="3 2"/>
-    <!-- =N label (top vertex, pyridine-type) -->
     <text x="-4" y="-10" font-size="10" fill="#22d3ee"
           font-family="'Segoe UI', Arial, sans-serif">N</text>
-    <!-- NH label (upper-left vertex, pyrrole-type) -->
     <text x="-26" y="-1" font-size="10" fill="#22d3ee"
           font-family="'Segoe UI', Arial, sans-serif">NH</text>
     </g>
 </g>
 
-<!-- 6. Indole (Trp sidechain): fused benzene+pyrrole with NH (bottom-left) -->
+<!-- 6. Indole (Trp sidechain, bottom-left) -->
 <g filter="url(#molGlow)" opacity="0.62">
     <g>
     <animateTransform attributeName="transform" type="translate"
         values="135,147; 135,139; 135,147" dur="4.5s" repeatCount="indefinite"
         calcMode="spline" keyTimes="0;0.5;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
-    <!-- 6-ring (benzene part) with aromatic circle -->
     <polygon points="0,-6 0,6 -10,12 -21,6 -21,-6 -10,-12"
              fill="none" stroke="#34d399" stroke-width="1.5" stroke-linejoin="round"/>
     <circle cx="-10.5" cy="0" r="6" fill="none" stroke="#34d399" stroke-width="1" stroke-dasharray="3 2"/>
-    <!-- 5-ring (pyrrole part), not including shared edge C7a-C3a which is the right edge of hexagon -->
-    <!-- C7a=(0,-6) → N1 → C2 → C3 → C3a=(0,6) -->
-    <!-- Short bond from C7a to just before N1 -->
     <line x1="0" y1="-6" x2="8" y2="-8.5" stroke="#34d399" stroke-width="1.5"/>
-    <!-- NH label at N1 position -->
     <text x="9" y="-8" font-size="9.5" fill="#34d399"
           font-family="'Segoe UI', Arial, sans-serif">NH</text>
-    <!-- Bond from N1 to C2 -->
     <line x1="20" y1="-7" x2="18.5" y2="0" stroke="#34d399" stroke-width="1.5"/>
-    <!-- C2 to C3 -->
     <line x1="18.5" y1="0" x2="11.5" y2="9.7" stroke="#34d399" stroke-width="1.5"/>
-    <!-- C3 to C3a=(0,6) -->
     <line x1="11.5" y1="9.7" x2="0" y2="6" stroke="#34d399" stroke-width="1.5"/>
     </g>
 </g>
 
-<!-- 7. Glycine: H₂N-CH₂-C(=O)-OH (bottom-right) -->
-<g filter="url(#molGlow)" opacity="0.58">
+<!-- 7. Glycine (bottom-right, floating over protein) -->
+<g filter="url(#molGlow)" opacity="0.68">
     <g>
     <animateTransform attributeName="transform" type="translate"
-        values="710,147; 710,139; 710,147" dur="5.5s" repeatCount="indefinite"
+        values="810,150; 810,142; 810,150" dur="5.5s" repeatCount="indefinite"
         calcMode="spline" keyTimes="0;0.5;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
     <text x="-36" y="4" font-size="10" fill="#f472b6"
           font-family="'Segoe UI', Arial, sans-serif">H&#x2082;N</text>
@@ -194,16 +215,16 @@
     </g>
 </g>
 
-<!-- ══ Title text ══ -->
-<text x="430" y="78" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+<!-- ══ Title ══ -->
+<text x="370" y="78" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
     font-size="36" font-weight="900" fill="url(#nameGrad)" filter="url(#glow)" letter-spacing="1">
     Hi, I'm Marina &#x1F44B;
 </text>
-<text x="430" y="112" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+<text x="370" y="112" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
     font-size="14" fill="#cbd5e1" letter-spacing="3" opacity="0.85">
     CHEMIST &#xB7; ML ENGINEER &#xB7; FRONTEND DEV &#xB7; QA
 </text>
-<line x1="280" y1="122" x2="580" y2="122" stroke="#7c3aed" stroke-width="1" opacity="0.4" stroke-dasharray="4 4">
+<line x1="170" y1="122" x2="570" y2="122" stroke="#7c3aed" stroke-width="1" opacity="0.4" stroke-dasharray="4 4">
     <animate attributeName="opacity" values="0.2;0.6;0.2" dur="3s" repeatCount="indefinite"/>
 </line>
 </svg>
