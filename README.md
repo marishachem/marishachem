@@ -18,7 +18,8 @@
   - 🧪 Built a database of organic compounds with visualization
   - 🤖 Training ML models on medical & time-series data with TensorFlow
   - ⚡ Learning React & building frontends that don't break
-  - 🎯 Making sure things actually work — Playwright test automation
+  - 🎯 Making sure things actually work — Playwright & Selenium test automation
+  - 🀄 Learning Mandarin Chinese for 4 months — built my own HSK flashcard apps to practice
   - 📚 Currently exploring: deep learning, bioinformatics pipelines, UI/UX patterns
 
   ---
@@ -43,6 +44,7 @@
   ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
   ### 🎯 QA & Testing
+  ![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=for-the-badge&logo=playwright&logoColor=white)
   ![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white)
   ![Pytest](https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)
 
