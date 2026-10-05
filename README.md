@@ -56,8 +56,8 @@
   |---------|-------------|-------|
   | [🧪 organic-chemicals-db](https://github.com/marishachem/organic-chemicals-db) | Full-stack app to search, visualize & save organic compounds. 2D/3D rendering, PubChem lookup, SQLite library | FastAPI, React, RDKit, SQLite |
   | [🔬 molecule-visualizer](https://github.com/marishachem/molecule-visualizer) | Search any molecule by name — see its 2D structure, 3D model, and drug-likeness properties | Python, Streamlit, RDKit, py3Dmol |
-  | [🀄 hsk1-flashcards](https://github.com/marishachem/hsk1-flashcards) | Flashcard app for New HSK 3.0 Level 1 (~300 words) with pinyin, stroke order, TTS & progress tracking | HTML, CSS, JavaScript |
-  | [🀄 hsk2-flashcards](https://github.com/marishachem/hsk2-flashcards) | Flashcard app for New HSK 3.0 Level 2 (~200 words) — same features, blue theme | HTML, CSS, JavaScript |
+  | [🀄 hsk1-flashcards](https://github.com/marishachem/hsk1-flashcards) | Mandarin flashcard app — New HSK 3.0 Level 1 (~300 words), pinyin, stroke order GIFs, TTS, progress tracking | HTML, CSS, JS |
+  | [🀄 hsk2-flashcards](https://github.com/marishachem/hsk2-flashcards) | Mandarin flashcard app — New HSK 3.0 Level 2 (~200 words), same features as HSK 1 | HTML, CSS, JS |
   | [🤖 ML_learning](https://github.com/marishachem/ML_learning) | ML notebooks — diabetes prediction, time-series, anomaly detection | TensorFlow, Jupyter |
   | [⚡ learning_react](https://github.com/marishachem/learning_react) | React course experiments & mini apps | React, JavaScript |
   | [🎯 SeleniumTest](https://github.com/marishachem/SeleniumTest) | Selenium UI test automation scripts | Selenium, Python |
