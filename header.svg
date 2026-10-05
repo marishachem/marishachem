@@ -59,7 +59,7 @@
 
 <!-- Diploma molecule: N-(4'-methoxyphenyl)-3-phenyl-3-(ethoxycarbonyl)-4-(ethoxycarbonylmethyl)-6-phenylpiperidin-2-one -->
 <g clip-path="url(#headerClip)" filter="url(#molGlow)" opacity="0.92">
-<g transform="translate(660,1) scale(0.523)">
+<g transform="translate(590,-30) scale(0.7)">
 
 
 <path class='bond-0 atom-0 atom-1' d='M 173.7,198.4 L 180.4,190.0' style='fill:none;fill-rule:evenodd;stroke:#f87171;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
