@@ -59,7 +59,7 @@
 
 <!-- Diploma molecule 2: Ethyl 5-[N-(4'-methoxyphenyl)-N-(1''-oxo-2''-ethoxycarbonyl-2''-phenylethyl)amino]-5-phenylpent-2-enoate -->
 <g clip-path="url(#headerClip)" filter="url(#molGlow)" opacity="0.92">
-<g transform="translate(-66,-30) scale(0.7)">
+<g transform="translate(2,-4) scale(0.55)">
 
 
 <path class='bond-0 atom-0 atom-1' d='M 57.0,159.5 L 81.8,165.8' style='fill:none;fill-rule:evenodd;stroke:#e2e8f0;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
